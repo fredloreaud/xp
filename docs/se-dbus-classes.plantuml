@@ -1,0 +1,44 @@
+@startuml
+
+title SE Linux D-bus - Simplified class Diagram
+
+skinparam backgroundColor transparent
+skinparam shadowing false
+skinparam titleFontColor #ffcc00
+
+skinparam class {
+BackgroundColor transparent
+BorderColor #ffcc00
+ArrowColor #ffcc00
+FontColor #ffcc00
+AttributeFontColor #ffcc00
+}
+
+class SdBusEndpoint
+{
+    -connection
+    #getConnection()
+}
+
+class SdBusClient
+{
+    +introspect()
+    +callGetMethod()
+    +callSetMethod()
+}
+
+class SdBusServer
+{
+    -name
+    -object
+    -interface
+    -methods
+    +process()
+    #sendReply()
+    #sendError()
+}
+
+SdBusEndpoint <|-down- SdBusClient
+SdBusEndpoint <|-down- SdBusServer
+
+@enduml

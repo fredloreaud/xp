@@ -1,0 +1,37 @@
+@startuml
+
+title SE Linux D-bus services
+
+skinparam backgroundColor transparent
+skinparam shadowing false
+skinparam titleFontColor #ffcc00
+
+skinparam usecase {
+BackgroundColor transparent
+BorderColor #ffcc00
+ArrowColor #ffcc00
+FontColor #ffcc00
+}
+
+(D-bus client) as cl
+
+(se-version-checker) as ck #transparent
+(se-identifier\nservice) as id
+
+(se-downloader\nservice) as dl
+(se-proxy\nservice) as prx
+
+(RAUC) as rauc
+
+cl -down-> ck #text:ffcc00 : "\n* Available versions\n* Check algorithm id"
+id -up-> ck #text:ffcc00 : "\n* Current versions"
+ck -up-> cl #text:ffcc00 : "\n* Acknowledgement / Refusal"
+
+cl -down-> prx #text:ffcc00 : "\n* Proxy configuration"
+
+cl -down-> dl #text:ffcc00 : "\n* Source URL\n* Destination file location"
+prx -up-> dl #text:ffcc00 : "\n* Proxy configuration"
+
+cl -down-> rauc #text:ffcc00;line.dashed : "\n* Bundle file location"
+
+@enduml
