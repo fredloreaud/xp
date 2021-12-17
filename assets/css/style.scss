@@ -3,7 +3,9 @@
 
 @import "";
 
-#footer_wrap {display: none;}
-#forkme_banner {display: none;}
-#downloads {display: none;}
-#whocares {haha: hehe;}
+a {
+  color: #660000;
+}
+a:hover {
+  color: #1b6a2a;
+}
