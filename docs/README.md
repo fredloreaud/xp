@@ -1,11 +1,5 @@
 # [SE Linux d-bus services](https://se-deviceintelligence.github.io/se-dbus/)
 
-[![clang-tidy](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/clang-tidy.yml/badge.svg)](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/clang-tidy.yml) [![cppcheck](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/cppcheck.yml) [![cpplint](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/cpplint.yml/badge.svg)](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/cpplint.yml) [![doxygen](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/doxygen.yml/badge.svg)](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/doxygen.yml) [![gtest](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/gtest.yml/badge.svg)](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/gtest.yml) [![lizard](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/lizard.yml/badge.svg)](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/lizard.yml) [![on-board-gtest](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/on-board-gtest.yml/badge.svg)](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/on-board-gtest.yml) [![veraxx](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/vera++.yml/badge.svg)](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/vera++.yml)
-
-[![Klocwork](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/klocwork.yml/badge.svg)](https://github.com/SE-DeviceIntelligence/se-dbus/actions/workflows/klocwork.yml)
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://mit-license.org/)
-
 D-bus client/server classes based on sd-bus library
 
 # Table of contents
